@@ -1,0 +1,157 @@
+// General
+.img-wrap {
+  position: relative;
+  
+  img {
+    width: 100%;
+  }
+}
+
+// Ad banners
+.banner {
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+// Thumbnails
+.thumbnail {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0px;
+
+  img {
+    width: 100%;
+  }
+}
+.thumbnail-wrap {
+  margin-bottom: 35px;
+
+  .copy-wrap {
+    position: relative;
+
+    .right {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+// Thumbnail Type
+.thumbnail {
+  .copy-sm {
+    color: #fff;
+    font-size: 12px;
+    font-weight: $bold;
+  }
+  .copy-md {
+    color: #fff;
+    font-family: $primary-font;
+    font-size: em(17px);
+    font-weight: $bold;
+    line-height: 1;
+  }
+  .copy-lg {
+    color: #fff;
+    font-family: $primary-font;
+    font-size: em(27px);
+    font-weight: 500;
+    line-height: 1;
+  }
+}
+
+// Thumbnail Sizes
+.thumbnail-sm {
+  max-height: 120px;
+}
+.thumbnail-md {
+  max-height: 140px;
+}
+.thumbnail-lg {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+// Img overlays
+.overlay {
+  position: relative;
+  background-color: rgba(40,40,63, .8);
+  transition: opacity .3s;
+}
+.overlay-bottom {
+  .overlay-item {
+    padding: 10px 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(40,40,63, .8);
+    text-align: center;
+  }
+}
+.overlay-full {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .thumbnail & {
+    opacity: 0;
+  }
+}
+
+// Thumbail full overlay
+.thumbnail {
+  &:hover {
+    .overlay-full {
+      opacity: 1;
+    }
+    .btn-wrap {
+      transform: translateY(-50%);
+    }
+    .btn-wrap-top {
+      transform: translateY(-100%);
+    }
+    .icon-list a {
+      transform: scale(1);
+    }
+  }
+  .copy-wrap {
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    bottom: 15px;
+    left: 0;
+    text-align: center;
+  }
+  .btn-wrap, .btn-wrap-top {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: transform .3s ease-out, background .3s;
+  }
+  .icon-list {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    
+    li {
+      display: inline-block;
+      overflow: hidden;
+      
+      a {
+       transform: scale(0);
+       transition: transform .3s .3s cubic-bezier(0.000, 0.690, 0.595, 1.535);
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+body {
+  background-color: $brand-gray-lightest;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $primary-font;
+}
+
+section {
+  position: relative;
+}
+
+a { 
+  text-decoration: none; 
+
+  span {
+    &.icon {
+      &:hover, &:focus, &:active, &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+button, .btn, .icon, a {
+  transition: all 0.2s;
+  
+  &:hover, &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}

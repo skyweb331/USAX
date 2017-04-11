@@ -1,0 +1,48 @@
+// Section Spacing
+.spacing-xs {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.spacing-sm {
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+.spacing-md {
+  padding-top: 40px;
+  padding-bottom: 55px;
+}
+.spacing-lg {
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+
+// General
+.va-center {
+  display: flex;
+  align-items: center;
+}
+
+// Control spacing
+$i: 0;
+
+@while $i < 65 {
+
+  .mt-#{$i} { margin-top: #{$i}px; }
+  .mb-#{$i} { margin-bottom: #{$i}px; }
+  .mr-#{$i} { margin-right: #{$i}px; }
+  .ml-#{$i} { margin-left: #{$i}px; }
+
+  .pt-#{$i} { padding-top: #{$i}px; }
+  .pb-#{$i} { padding-bottom: #{$i}px; }
+  .pr-#{$i} { padding-right: #{$i}px; }
+  .pl-#{$i} { padding-left: #{$i}px; }
+
+  $i: $i + 5;
+}
+.m-0a {
+  margin: 0 auto;
+}
+
+.scroll-lock {
+  overflow: hidden !important;
+}

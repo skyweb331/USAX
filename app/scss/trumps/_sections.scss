@@ -1,0 +1,11 @@
+div,
+section,
+article {
+  &.bg-gray {
+    background-color: $brand-gray-lightest;
+  }
+  &.bg-white {
+    background-color: $white;
+  }
+}
+

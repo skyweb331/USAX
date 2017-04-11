@@ -1,0 +1,822 @@
+extends ./partials/_layout.pug
+
+block content
+  section#hero-slider(style="background-image: url(img/bg-hero.jpg);")
+    .container
+      .row
+        .col-sm-6
+          .swiper-container.swiper-hero
+            .swiper-wrapper
+              .swiper-slide
+                h1 Help Your Local Community Grow
+                p The USA Exchange was designed for anyone and everyone. Browse through numerous amounts of opportunities &amp; make new connections.
+                a.btn.btn-gray.btn-md.btn-wide(href="#") Join The Exchange!
+              .swiper-slide
+                h1 Help Your Local Community Grow
+                p The USA Exchange was designed for anyone and everyone. Browse through numerous amounts of opportunities &amp; make new connections.
+                a.btn.btn-gray.btn-md.btn-wide(href="#") Join The Exchange!
+              .swiper-slide
+                h1 Help Your Local Community Grow
+                p The USA Exchange was designed for anyone and everyone. Browse through numerous amounts of opportunities &amp; make new connections.
+                a.btn.btn-gray.btn-md.btn-wide(href="#") Join The Exchange!
+            .swiper-pagination.swiper-hero-pagination
+      .card.card-hero.hidden-xs
+        .card-inner
+          h2 What is the USA Exchange All about?
+          div.img-wrap
+            iframe.vid-fullscreen(width='560', height='315', src='https://www.youtube.com/embed/J5pXt5grSKc', frameborder='0', allowfullscreen='')
+
+  section.spacing-md.bg-white.hidden-xs.hidden-sm
+    .container
+      .row
+        .col-sm-4
+          .col-headwrap
+            h2.col-heading Local Services &amp; Products
+            a.btn.btn-default.btn-xs.btn-upper(href="#") See all
+
+          .row
+            .thumbnail-wrap.col-sm-6
+              .thumbnail.thumbnail-sm.overlay.overlay-bottom.img-wrap
+                img(src="https://placehold.it/170x119")
+                .overlay-item.copy-md $320
+              .semibold-sm-primary 20% Off the Total of a New Installed Fence
+            .thumbnail-wrap.col-sm-6
+              .thumbnail.thumbnail-sm.overlay.overlay-bottom.img-wrap
+                img(src="https://placehold.it/170x119")
+                .overlay-item.copy-md $70
+              .semibold-sm-primary Get $200 Credit of A+ Plumbing Services for…
+
+            .col-xs-12
+              .content-box-sm
+                .img-outter
+                  img(src="https://placehold.it/70x70")
+                .content-box-inner
+                  p.semibold-sm-primary 4hrs of Handyman Services
+                  p.regular-sm We all got something that...
+                  span.label.label-success.label-md.label-width-md $249
+              .content-box-sm
+                .img-outter
+                  img(src="https://placehold.it/70x70")
+                .content-box-inner
+                  p.semibold-sm-primary $50 Value Fresh Organic Juice
+                  p.regular-sm You haven’t tried fresh, farm…
+                  span.label.label-success.label-md.label-width-md $74
+              .content-box-sm
+                .img-outter
+                  img(src="https://placehold.it/70x70")
+                .content-box-inner
+                  p.semibold-sm-primary $50 Value Fresh Organic Juice
+                  p.regular-sm ou haven’t tried fresh, farm…
+                  span.label.label-success.label-md.label-width-md $120
+              .content-box-sm
+                .img-outter
+                  img(src="https://placehold.it/70x70")
+                .content-box-inner
+                  p.semibold-sm-primary 4hrs of Handyman Services
+                  p.regular-sm We all got something that...
+                  span.label.label-success.label-md.label-width-md 
+                   | $10
+                   small /mo
+
+        .col-sm-4
+          .col-headwrap
+            h2.col-heading Latest Members &amp; Incentives
+            a.btn.btn-default.btn-xs.btn-upper(href="#") See all
+          ul.recent-members
+            li
+              .media.recent-member-content
+                .media-body
+                  h4.media-heading
+                    a(href="#") On the Job Training (OJT)
+                  p The economic development ad valorem tax exemption (EDAVTE)
+                  ul.tags
+                    li
+                      a(href="#") Tax Exemption
+                    li
+                      a(href="#") Incentive
+                    li
+                      a(href="#") Sarasota
+                    li
+                      a(href="#") Exemption
+                .media-right.media-middle.media-image
+                  a(href='#')
+                    img.media-object(src='img/tmp/edc_logo.png', alt='...')
+            li
+              .media.recent-member-content
+                .media-body
+                  h4.media-heading
+                    a(href="#") Road Impact Fee Mitigation
+                  p The economic development ad valorem tax exemption (EDAVTE)
+                  ul.tags
+                    li
+                      a(href="#") Tax Exemption
+                    li
+                      a(href="#") Incentive
+                    li
+                      a(href="#") Sarasota
+                    li
+                      a(href="#") Exemption
+                .media-right.media-middle.media-image
+                  a(href='#')
+                    img.media-object(src='img/tmp/edc_logo.png', alt='...')
+            li.hidden-md
+              .media.recent-member-content
+                .media-body
+                  h4.media-heading
+                    a(href="#") Homestead Tax Incentive
+                  p The economic development ad valorem tax exemption (EDAVTE)
+                  ul.tags
+                    li
+                      a(href="#") Tax Exemption
+                    li
+                      a(href="#") Incentive
+                    li
+                      a(href="#") Sarasota
+                    li
+                      a(href="#") Exemption
+                .media-right.media-middle.media-image
+                  a(href='#')
+                    img.media-object(src='img/tmp/edc_logo.png', alt='...')
+
+        .col-sm-4
+          form#newsletter-subscribe
+            h2.subscribe-heading Subscribe to our Newsletter
+            .input-group
+              span.icon.icon-mail
+              input.form-control(type='text', placeholder='Email Address')
+              span.input-group-btn
+                input.btn.btn-primary(type='submit', value='Subscribe!')
+          .recent-news
+            h2 National News
+            .media
+              .media-left
+                a(href='#')
+                  img.media-object(src='img/tmp/recent-news.png', alt='')
+              .media-body
+                h4.media-heading
+                  a(href="#") Business Opportunies Section
+                p Half a year in development, the city of...
+            .media
+              .media-left
+                a(href='#')
+                  img.media-object(src='img/tmp/recent-news.png', alt='')
+              .media-body
+                h4.media-heading
+                  a(href="#") 12 Benefits of Going to the Beach
+                p Half a year in development, the city of...
+            .media
+              .media-left
+                a(href='#')
+                  img.media-object(src='img/tmp/recent-news.png', alt='')
+              .media-body
+                h4.media-heading
+                  a(href="#") Sarasota Now in the Top 10 Places to Live
+                p Half a year in development, the city of...
+            .ad
+              a(href='#')
+                img.img-responsive(src='img/tmp/ad.jpg')
+
+
+  section.spacing-md.bg-gray
+    .container
+      .col-headwrap
+        h2.col-heading.heading-icon
+          span.icon.icon-briefcase
+          span.hidden-xs Business 
+          | Opportunities in
+          button.btn.btn-dash.ml-10 National
+            span.caret
+        a.btn.btn-default.btn-xs.btn-upper(href="#") See all
+      .swiper-wrap
+        .swiper-container.thumbnail-swiper
+          .swiper-wrapper
+            .swiper-slide
+              .thumbnail.thumbnail-md
+                img(src="https://placehold.it/500x1000")
+                .copy-wrap 
+                  .copy-lg $249,880
+                .overlay.overlay-full
+                  .btn-wrap.btn-wrap-top
+                    a.btn.btn-success(href="#") View Details
+              .card.card-xs.card-tn
+                .copy-lg Golf Cart Mania!
+                .label.label-default-alt.label-xxs
+                  .label-inner ...
+                .copy-sm / Transportation
+                ul.list-dots
+                  li
+                    a(href="#") Bank Financing
+                  li
+                    a(href="#") Distressed
+                  li
+                    a(href="#") $203 Cash Flow
+                  li
+                    a(href="#") Waterfront
+                  li
+                    a(href="#") FF&amp;E Included 
+
+            .swiper-slide 
+              .thumbnail.thumbnail-md
+                img(src="https://placehold.it/500x1000")
+                .copy-wrap 
+                  .copy-lg $1,250,000
+                .overlay.overlay-full
+                  .btn-wrap.btn-wrap-top
+                    a.btn.btn-success(href="#") View Details
+              .card.card-xs.card-tn
+                .copy-lg Bayfront Restaurant
+                .label.label-default-alt.label-xxs
+                  .label-inner ...
+                .copy-sm / Food Services
+                ul.list-dots
+                  li
+                    a(href="#") Distressed
+                  li
+                    a(href="#") $345 Cash Flow
+                  li
+                    a(href="#") Waterfront
+                  li
+                    a(href="#") FF&amp;E Included
+
+            .swiper-slide 
+              .thumbnail.thumbnail-md
+                img(src="https://placehold.it/500x1000")
+                .copy-wrap 
+                  .copy-lg $78,500
+                .overlay.overlay-full
+                  .btn-wrap.btn-wrap-top
+                    a.btn.btn-success(href="#") View Details
+              .card.card-xs.card-tn
+                .copy-lg Little Ol' Coffee Shop
+                .label.label-default-alt.label-xxs
+                  .label-inner ...
+                .copy-sm / Food Services
+                ul.list-dots
+                  li
+                    a(href="#") Bank Financing
+                  li
+                    a(href="#") $780k Rev.
+                  li
+                    a(href="#") $299 Cash Flow
+                  li
+                    a(href="#") Bakery
+                  li
+                    a(href="#") FF&amp;E Included
+
+            .swiper-slide 
+              .thumbnail.thumbnail-md
+                img(src="https://placehold.it/500x1000")
+                .copy-wrap 
+                  .copy-lg $150,000
+                .overlay.overlay-full
+                  .btn-wrap.btn-wrap-top
+                    a.btn.btn-success(href="#") View Details
+              .card.card-xs.card-tn
+                .copy-lg CocoPlum Units
+                .label.label-default-alt.label-xxs
+                  .label-inner ...
+                .copy-sm / Office
+                ul.list-dots
+                  li
+                    a(href="#") Bank Financing
+                  li
+                    a(href="#") Distressed
+                  li
+                    a(href="#") $203 Cash Flow
+                  li
+                    a(href="#") Waterfront
+                  li
+                    a(href="#") FF&amp;E Included
+
+            .swiper-slide 
+              .thumbnail.thumbnail-md
+                img(src="https://placehold.it/500x1000")
+                .copy-wrap 
+                  .copy-lg $1,250,000
+                .overlay.overlay-full
+                  .btn-wrap.btn-wrap-top
+                    a.btn.btn-success(href="#") View Details
+              .card.card-xs.card-tn
+                .copy-lg Bayfront Restaurant
+                .label.label-default-alt.label-xxs
+                  .label-inner ...
+                .copy-sm / Resturant
+                ul.list-dots
+                  li
+                    a(href="#") Distressed
+                  li
+                    a(href="#") $345 Cash Flow
+                  li
+                    a(href="#") Waterfront
+                  li
+                    a(href="#") FF&amp;E Included 
+
+            .swiper-slide 
+              .thumbnail.thumbnail-md
+                img(src="https://placehold.it/500x1000")
+                .copy-wrap 
+                  .copy-lg $78,500
+                .overlay.overlay-full
+                  .btn-wrap.btn-wrap-top
+                    a.btn.btn-success(href="#") View Details
+              .card.card-xs.card-tn
+                .copy-lg Little Ol' Coffee Shop
+                .label.label-default-alt.label-xxs
+                  .label-inner ...
+                .copy-sm / Restaurant
+                ul.list-dots
+                  li
+                    a(href="#") Bank Financing
+                  li
+                    a(href="#") Distressed
+                  li
+                    a(href="#") $203 Cash Flow
+                  li
+                    a(href="#") Waterfront
+                  li
+                    a(href="#") FF&amp;E Included
+
+            .swiper-slide 
+              .thumbnail.thumbnail-md
+                img(src="https://placehold.it/500x1000")
+                .copy-wrap 
+                  .copy-lg $249,880
+                .overlay.overlay-full
+                  .btn-wrap.btn-wrap-top
+                    a.btn.btn-success(href="#") View Details
+              .card.card-xs.card-tn
+                .copy-lg Golf Cart Mania!
+                .label.label-default-alt.label-xxs
+                  .label-inner ...
+                .copy-sm / Transportation
+                ul.list-dots
+                  li
+                    a(href="#") Bank Financing
+                  li
+                    a(href="#") Distressed
+                  li
+                    a(href="#") $203 Cash Flow
+                  li
+                    a(href="#") Waterfront
+                  li
+                    a(href="#") FF&amp;E Included 
+
+            .swiper-slide 
+              .thumbnail.thumbnail-md
+                img(src="https://placehold.it/500x1000")
+                .copy-wrap 
+                  .copy-lg $1,250,000
+                .overlay.overlay-full
+                  .btn-wrap.btn-wrap-top
+                    a.btn.btn-success(href="#") View Details
+              .card.card-xs.card-tn
+                .copy-lg Bayfront Restaurant
+                .label.label-default-alt.label-xxs
+                  .label-inner ...
+                .copy-sm / Food Services
+                ul.list-dots
+                  li
+                    a(href="#") Distressed
+                  li
+                    a(href="#") $345 Cash Flow
+                  li
+                    a(href="#") Waterfront
+                  li
+                    a(href="#") FF&amp;E Included
+
+            .swiper-slide 
+              .thumbnail.thumbnail-md
+                img(src="https://placehold.it/500x1000")
+                .copy-wrap 
+                  .copy-lg $78,500
+                .overlay.overlay-full
+                  .btn-wrap.btn-wrap-top
+                    a.btn.btn-success(href="#") View Details
+              .card.card-xs.card-tn
+                .copy-lg Little Ol' Coffee Shop
+                .label.label-default-alt.label-xxs
+                  .label-inner ...
+                .copy-sm / Food Services
+                ul.list-dots
+                  li
+                    a(href="#") Bank Financing
+                  li
+                    a(href="#") $780k Rev.
+                  li
+                    a(href="#") $299 Cash Flow
+                  li
+                    a(href="#") Bakery
+                  li
+                    a(href="#") FF&amp;E Included
+
+            .swiper-slide 
+              .thumbnail.thumbnail-md
+                img(src="https://placehold.it/500x1000")
+                .copy-wrap 
+                  .copy-lg $150,000
+                .overlay.overlay-full
+                  .btn-wrap.btn-wrap-top
+                    a.btn.btn-success(href="#") View Details
+              .card.card-xs.card-tn
+                .copy-lg CocoPlum Units
+                .label.label-default-alt.label-xxs
+                  .label-inner ...
+                .copy-sm / Office
+                ul.list-dots
+                  li
+                    a(href="#") Bank Financing
+                  li
+                    a(href="#") Distressed
+                  li
+                    a(href="#") $203 Cash Flow
+                  li
+                    a(href="#") Waterfront
+                  li
+                    a(href="#") FF&amp;E Included
+
+        .swiper-button-next.thumbnail-next.hidden-xs
+        .swiper-button-prev.thumbnail-prev.hidden-xs
+
+
+  section.ad-section-split.spacing-md.bg-gray.visible-xs.pt-0.pb-0
+    .container
+      .row
+        .col-md-6
+          div.banner.banner-md
+            img(src="img/tmp/ad-sres.jpg")
+
+
+  section.spacing-md
+    .container
+      .col-headwrap
+        h2.col-heading.heading-icon
+          span.icon.icon-building
+          | Incentives in
+          button.btn.btn-dash.ml-10 National
+            span.caret
+        a.btn.btn-default.btn-xs.btn-upper(href="#") See all
+      .swiper-wrap
+        .swiper-container.card-swiper
+          .swiper-wrapper
+            .swiper-slide 
+              .card.card-sm.card-white
+                .copy-lg On the Job Training(OJT)
+                .copy-sm The economic development ad
+                ul.tags
+                  li
+                    a(href="#") Loan Programs
+                  li
+                    a(href="#") Employees
+                  li
+                    a(href="#") Tax
+                  li
+                    a(href="#") Local Incentive
+            .swiper-slide 
+              .card.card-sm.card-white
+                .copy-lg Road Impact Fee Mitigation
+                .copy-sm Sarasota County serves as a catalyst…
+                ul.tags
+                  li
+                    a(href="#") Tax Incentive
+                  li
+                    a(href="#") Employees
+                  li
+                    a(href="#") Small Business
+                  li
+                    a(href="#") Grant
+            .swiper-slide 
+              .card.card-sm.card-white
+                .copy-lg On the Job Training (OJT)
+                .copy-sm The economic development ad valo…
+                ul.tags
+                  li
+                    a(href="#") Loan Programs
+                  li
+                    a(href="#") Employees
+                  li
+                    a(href="#") Tax
+                  li
+                    a(href="#") Local Incentive
+            .swiper-slide 
+              .card.card-sm.card-white
+                .copy-lg Road Impact Fee Metigation
+                .copy-sm Sarasota County serves as a catalyst...
+                ul.tags
+                  li
+                    a(href="#") Loan Programs
+                  li
+                    a(href="#") Employees
+                  li
+                    a(href="#") Tax
+                  li
+                    a(href="#") Local Incentive
+            .swiper-slide 
+              .card.card-sm.card-white
+                .copy-lg On the Job Training(OJT)
+                .copy-sm The economic development ad
+                ul.tags
+                  li
+                    a(href="#") Loan Programs
+                  li
+                    a(href="#") Employees
+                  li
+                    a(href="#") Tax
+                  li
+                    a(href="#") Local Incentive
+            .swiper-slide 
+              .card.card-sm.card-white
+                .copy-lg Road Impact Fee Mitigation
+                .copy-sm Sarasota County serves as a catalyst…
+                ul.tags
+                  li
+                    a(href="#") Tax Incentive
+                  li
+                    a(href="#") Employees
+                  li
+                    a(href="#") Small Business
+                  li
+                    a(href="#") Grant
+            .swiper-slide 
+              .card.card-sm.card-white
+                .copy-lg On the Job Training (OJT)
+                .copy-sm The economic development ad valo…
+                ul.tags
+                  li
+                    a(href="#") Loan Programs
+                  li
+                    a(href="#") Employees
+                  li
+                    a(href="#") Tax
+                  li
+                    a(href="#") Local Incentive
+            .swiper-slide 
+              .card.card-sm.card-white
+                .copy-lg Road Impact Fee Metigation
+                .copy-sm Sarasota County serves as a catalyst...
+                ul.tags
+                  li
+                    a(href="#") Loan Programs
+                  li
+                    a(href="#") Employees
+                  li
+                    a(href="#") Tax
+                  li
+                    a(href="#") Local Incentive
+
+        .swiper-button-next.card-next.hidden-xs
+        .swiper-button-prev.card-prev.hidden-xs
+
+
+  section.spacing-md.visible-xs
+    .container
+      .col-headwrap
+        h2.col-heading Latest National News
+        a.btn.btn-default.btn-xs.btn-upper(href="#") See all
+      .swiper-wrap
+        .swiper-container.img-copy-swiper
+          .swiper-wrapper
+            .swiper-slide 
+              .thumbnail-wrap
+              .thumbnail.thumbnail-sm.img-wrap
+                img(src="https://placehold.it/300x150")
+              .regular-sm Get Help with Targeting Your Audience
+            .swiper-slide 
+              .thumbnail-wrap
+              .thumbnail.thumbnail-sm.img-wrap
+                img(src="https://placehold.it/300x150")
+              .regular-sm 20% Off the Total of a New Installed Fence
+            .swiper-slide 
+              .thumbnail-wrap
+              .thumbnail.thumbnail-sm.img-wrap
+                img(src="https://placehold.it/300x150")
+              .regular-sm 3 wolf moon direct trade migas scenester 
+            .swiper-slide 
+              .thumbnail-wrap
+              .thumbnail.thumbnail-sm.img-wrap
+                img(src="https://placehold.it/300x150")
+              .regular-sm 20% Off the Total of a New Installed Fence
+
+
+    section.spacing-md.visible-xs
+    .container
+      .col-headwrap
+        h2.col-heading Direct Marketing
+        a.btn.btn-default.btn-xs.btn-upper(href="#") See all
+      .swiper-wrap
+        .swiper-container.img-copy-swiper
+          .swiper-wrapper
+            .swiper-slide 
+              .thumbnail-wrap
+              .thumbnail.thumbnail-sm.img-wrap
+                img(src="https://placehold.it/300x150")
+              .regular-sm Get Help with Targeting Your Audience
+            .swiper-slide 
+              .thumbnail-wrap
+              .thumbnail.thumbnail-sm.img-wrap
+                img(src="https://placehold.it/300x150")
+              .regular-sm 20% Off the Total of a New Installed Fence
+            .swiper-slide 
+              .thumbnail-wrap
+              .thumbnail.thumbnail-sm.img-wrap
+                img(src="https://placehold.it/300x150")
+              .regular-sm 3 wolf moon direct trade migas scenester 
+
+
+    section.spacing-md.visible-xs
+    .container
+      .col-headwrap
+        h2.col-heading Featured Franchises
+        a.btn.btn-default.btn-xs.btn-upper(href="#") See all
+      .swiper-wrap
+        .swiper-container.img-copy-swiper
+          .swiper-wrapper
+            .swiper-slide 
+              .thumbnail-wrap
+              .thumbnail.thumbnail-sm.img-wrap
+                img(src="https://placehold.it/300x150")
+              .regular-sm Get Help with Targeting Your Audience
+            .swiper-slide 
+              .thumbnail-wrap
+              .thumbnail.thumbnail-sm.img-wrap
+                img(src="https://placehold.it/300x150")
+              .regular-sm 20% Off the Total of a New Installed Fence
+            .swiper-slide 
+              .thumbnail-wrap
+              .thumbnail.thumbnail-sm.img-wrap
+                img(src="https://placehold.it/300x150")
+              .regular-sm 3 wolf moon direct trade migas scenester 
+
+        .swiper-button-next.img-copy-next.hidden-xs
+        .swiper-button-prev.img-copy-prev.hidden-xs
+
+
+  section.spacing-md.bg-gray.hidden-xs
+    .container
+      .row
+        .col-sm-6.hidden-xs
+          div.banner.banner-md
+            img(src="img/tmp/ad-sres.jpg")
+        .col-sm-6
+          div.banner.banner-md
+            img(src="img/tmp/ad-dream.jpg")
+
+       
+  section.ctas.hidden-xs
+    .container-fluid
+      .row
+        .col-sm-3.cta-item(style="background-image: url('img/tmp/cta1.jpg')")
+          .cta-inner
+            .cta-icon
+              span.icon.icon-person_flag
+            h2 Complimentary Profile Page
+            p Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Maecenas faucibus mollis interdum.
+            a.btn.btn-success(href="#") Create A Profile
+        .col-sm-3.cta-item(style="background-image: url('img/tmp/cta2.jpg')")
+          .cta-inner
+            .cta-icon
+              span.icon.icon-briefcase_outline
+            h2 Business Opportunities
+            p Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Maecenas faucibus mollis interdum.
+            a.btn.btn-success(href="#") Add A Listing
+        .col-sm-3.cta-item(style="background-image: url('img/tmp/cta3.jpg')")
+          .cta-inner
+            .cta-icon
+              span.icon.icon-building2
+            h2 Local Incentives
+            p Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Maecenas faucibus mollis interdum.
+            a.btn.btn-success(href="#") Add An Incentive
+        .col-sm-3.cta-item(style="background-image: url('img/tmp/cta4.jpg')")
+          .cta-inner
+            .cta-icon
+              span.icon.icon-megaphone
+            h2 Spread The Word!
+            p Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Maecenas faucibus mollis interdum.
+            a.btn.btn-success(href="#") Share with Friends
+          
+
+  section.spacing-lg.bg-white.hidden-xs
+    .container
+      .row
+        .col-sm-12.col-lg-6.col-lg-push-3
+          .col-headwrap
+            h2.col-heading Latest National News
+            a.btn.btn-default.btn-xs.btn-upper(href="#") See all
+          .thumbnail-wrap
+            .thumbnail.thumbnail-lg.img-wrap
+              img(src="https://placehold.it/600x300")
+            .semibold-sm-primary.mb-10 Verterans March Through Washington D.C.
+            p.regular-sm Sarasota County serves as a catalyst for existing businesses to expand, creating new job opportunities for residents, veterans march through the downtown...
+
+            .card.card-xs.bg-gray.hidden-xs.mt-50
+              .row
+                .col-sm-4 
+                  .img-wrap.mb-5
+                    img(src="https://placehold.it/300x150")
+                  p.regular-sm Facebook Has Grown Into a Mega-Company
+                .col-sm-4
+                  .img-wrap.mb-5
+                    img(src="https://placehold.it/300x150")
+                  p.regular-sm Facebook Has Grown Into a Mega-Company
+                .col-sm-4
+                  .img-wrap.mb-5
+                    img(src="https://placehold.it/300x150")
+                  p.regular-sm Facebook Has Grown Into a Mega-Company
+
+
+
+        .col-sm-6.col-lg-3.col-lg-pull-6
+          .col-headwrap
+            h2.col-heading Direct Marketing
+            a.btn.btn-default.btn-xs.btn-upper(href="#") See all
+          .thumbnail-wrap
+            .thumbnail.thumbnail-md.img-wrap
+              img(src="https://placehold.it/300x150")
+            .semibold-sm-primary Get Help with Targeting Your Audience
+          .thumbnail-wrap
+            .thumbnail.thumbnail-md.img-wrap
+              img(src="https://placehold.it/300x150")
+            .semibold-sm-primary 20% Off the Total of a New Installed Fence
+          .thumbnail-wrap
+            .thumbnail.thumbnail-md.img-wrap
+              img(src="https://placehold.it/300x150")
+            .semibold-sm-primary 20% Off the Total of a New Installed Fence
+
+        .col-sm-6.col-lg-3
+          .col-headwrap
+            h2.col-heading Featured Franchises
+            a.btn.btn-default.btn-xs.btn-upper(href="#") See all
+          .thumbnail-wrap
+            .thumbnail.thumbnail-md.img-wrap
+              img(src="https://placehold.it/300x150")
+            .copy-wrap
+              .semibold-sm-primary Bayfront Restaurant Plaza
+              .right.semibold-smd-success $1.2m
+
+          .thumbnail-wrap
+            .thumbnail.thumbnail-md.img-wrap
+              img(src="https://placehold.it/300x150")
+            .copy-wrap
+              .semibold-sm-primary Golf Car Rental 
+              .right.semibold-smd-success $78k
+
+          .thumbnail-wrap
+            .thumbnail.thumbnail-md.img-wrap
+              img(src="https://placehold.it/300x150")
+            .copy-wrap
+              .semibold-sm-primary Little Ol’ Coffee Shop
+              .right.semibold-smd-success $235k
+
+
+  section.spacing-xs.bg-gray.visible-xs
+    .container
+      .ad
+        a(href='#')
+          img.m-0a.img-responsive(src='img/tmp/ad.jpg')
+
+
+  section.spacing-lg.pt-0.hidden-xs.hidden-sm.hidden-md
+    .container
+      .card.card-full
+        .row
+          .col-md-8
+            .semibold-xs.text-center.mb-15 Our newest members
+            ul.list-avatar.list-unstyled
+              li
+                .avatar
+                  img(src="https://placehold.it/50x50")
+                .user Corey H.
+              li
+                .avatar
+                  img(src="https://placehold.it/50x50")
+                .user David K.
+              li
+                .avatar
+                  img(src="https://placehold.it/50x50")
+                .user Mike J.
+              li
+                .avatar
+                  img(src="https://placehold.it/50x50")
+                .user Peter D.
+              li
+                .avatar
+                  img(src="https://placehold.it/50x50")
+                .user Rob D.
+              li
+                .avatar
+                  img(src="https://placehold.it/50x50")
+                .user Greyson M.
+              li
+                .avatar
+                  img(src="https://placehold.it/50x50")
+                .user Hunter G.
+          .col-md-4
+            .text-right
+              .text-center
+                .semibold-md-white.mt-10.mb-20 Make America Great Again!
+                a.btn.btn-success.btn-md(href="#") Join The Exchange!
+
+
+  section.spacing-lg.bg-gray.hidden-xs
+    .container
+      div.banner
+        img(src="img/tmp/ad-angies.jpg")

@@ -1,0 +1,73 @@
+// General Styles
+.swiper-wrap {
+  position: relative;
+
+  .swiper-button-next, .swiper-button-prev {
+    height: 50px;
+    width: 45px;
+    background-color: #fff;
+    border-radius: 2px;
+    background-size: 15px;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-disabled {
+    display: none;
+  }
+}
+@include mq(large-desktop-up) {
+  .swiper-wrap {
+    .swiper-button-next {
+      right: -66px;
+    }
+    .swiper-button-prev {
+      left: -66px;
+    }
+  }
+}
+
+
+// Hero slider
+#hero-slider {
+  .swiper-wrapper {
+    margin-top: 10px;
+    margin-bottom: 65px;
+  }
+  .swiper-pagination {
+    top: 0;
+    bottom: auto;
+    text-align: left;
+
+    .swiper-pagination-bullet {
+      height: 14px;
+      width: 14px;
+      opacity: 1;
+      background-color: #6B6D73;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $white;
+    }
+  }
+}
+
+
+// Thumbnail slider
+.thumbnail-swiper {
+  .thumbnail {
+    margin-bottom: 0px;
+  }
+  .card {
+    min-height: 160px;
+  }
+}
+
+// Img-Copy slider
+.img-copy-swiper {
+  .thumbnail-wrap {
+    margin-bottom: 0px;
+  }
+}

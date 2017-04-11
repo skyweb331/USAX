@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 308</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header" transform="translate(-1429.000000, -15.000000)" fill="#828E9B">
+            <g id="Utility-Bar" transform="translate(22.000000, 0.000000)">
+                <g id="Rectangle-105-+-How-It-Works------Bu" transform="translate(1311.000000, 14.000000)">
+                    <path d="M103,6 L103,2.00247329 C103,1.45576096 102.552285,1 102,1 C101.443865,1 101,1.44882258 101,2.00247329 L101,6 L97.0024733,6 C96.455761,6 96,6.44771525 96,7 C96,7.55613518 96.4488226,8 97.0024733,8 L101,8 L101,11.9975267 C101,12.544239 101.447715,13 102,13 C102.556135,13 103,12.5511774 103,11.9975267 L103,8 L106.997527,8 C107.544239,8 108,7.55228475 108,7 C108,6.44386482 107.551177,6 106.997527,6 L103,6 Z" id="Rectangle-308"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

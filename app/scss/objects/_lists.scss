@@ -1,0 +1,68 @@
+// Tag List
+.tags {
+  @extend .list-unstyled;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    a {
+      @extend .label, .label-default, .label-xs;
+      display: inline-block;
+    }
+  }
+}
+
+
+// Dot List
+.list-dots {
+  @extend .list-unstyled;
+  @extend .list-inline;
+  li {
+    display: inline-block;
+    padding: 0;
+
+    &:after {
+      margin: 0 3px;
+      position: relative;
+      top: -1px;
+      content: "\2022";
+      color: $brand-gray;
+      font-size: 7px;
+      line-height: 1;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  a {
+    @extend .semibold-xs;
+    text-transform: none;
+  }
+}
+
+// Avatar
+.list-avatar {
+  margin: 0px;
+
+  li {
+    display: inline-block;
+    padding: 0 25px;
+    text-align: center;
+  }
+  .avatar {
+    margin-bottom: 10px;
+    img {
+      @extend .img-circle;
+      height: 42px;
+      width: 42px;
+    }
+  }
+  .user {
+    @extend .semibold-sm;
+  }
+}

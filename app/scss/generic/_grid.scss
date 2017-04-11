@@ -1,0 +1,34 @@
+.container-fluid {
+
+}
+.container-three {
+  margin: 0;
+  padding: 0;
+}
+.row-fluid {
+  width: 100%;
+  display: table;
+}
+.left-col {
+  width: 267px;
+}
+.center-col {
+
+}
+.right-col {
+  width: 323px;
+}
+
+.left-col,
+.center-col,
+.right-col {
+  display: table-cell;
+  vertical-align: top;
+}
+
+@include mq(large-desktop-up) {
+  .container {
+    width: auto;
+    max-width: 1268px;
+  }
+}

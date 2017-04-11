@@ -1,0 +1,54 @@
+// LabelGeneral
+.label {
+  display: inline-block;
+  border-radius: 2px;
+  transition: all .2s;
+}
+.label-width-md {
+  width: 60px;
+}
+
+// Label theme
+.label-default {
+  background: $white;
+  color: $brand-gray;
+}
+.label-default-alt {
+  background-color: $brand-gray-lightest;
+  color: $brand-gray;
+
+  &:hover {
+    background-color: #F7F7F7;
+  }
+}
+.label-success {
+  background-color: $white;
+  color: $brand-success;
+}
+
+
+// Label Sizing
+.label-xxs {
+  .label-inner {
+    padding: 0 0px;
+    position: relative;
+    top: -2px;
+    color: $brand-success;
+    letter-spacing: 1px;
+  }
+}
+.label-xs {
+  padding: 5px 8px;
+  font-weight: $bold;
+  font-size: em(12px);
+}
+.label-sm {
+
+}
+.label-md {
+  font-size: 16px;
+
+  small {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,45 @@
+.badge {
+  height: 18px;
+  width: 18px;
+  padding: 0px;
+  position: relative;
+  font-family: $primary-font;
+  line-height: 18px;
+
+  .badge-inner {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 11px;
+  }
+}
+
+.badge-sqaure {
+  height: 24px;
+  width: 30px;
+  padding: 0;
+  background-color: $brand-primary;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+// badge colors
+.badge-success {
+  background-color: $brand-success;
+}
+
+// badge notification
+.badge-notification {
+  position: relative;
+
+  .badge {
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    text-align: center;
+  }
+}

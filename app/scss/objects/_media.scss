@@ -1,0 +1,9 @@
+.media {
+  img {
+
+  }
+  .media-heading {
+    @extend .semibold-sm-primary;
+    margin-bottom: 5px;
+  }
+}

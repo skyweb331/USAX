@@ -1,0 +1,321 @@
+extends ./partials/_layout.pug
+
+block content
+  section#results-section.spacing-lg
+    include ./partials/_search-sidebar.pug
+    include ./partials/_info-sidebar.pug
+    .container
+      .row
+        .col-md-10.col-md-offset-1
+          .results-header
+            .results-primary
+              .results-details
+                span.results-ammount 137
+                span.lesser  Results
+              a.btn.btn-gray.btn-xs(href="opportunity.html")
+                span.icon-plus
+                | Add new
+            .results-secondary
+              .dropdown
+                button#ddSort.btn.btn-link.dropdown-toggle.semibold-sm-primary(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                  | Sort by 
+                  span.caret
+                ul.dropdown-menu(aria-labelledby='ddSort')
+                  li
+                    a(href='#') Featured
+                  li
+                    a(href='#') Price: Lowest - Highest
+                  li
+                    a(href='#') Price: Highest - Lowest
+                  li
+                    a(href='#') Date
+                  li
+                    a(href='#') option A-Z
+
+              ul.results-view
+                li
+                  button.active.icon.icon-grid-view
+                li
+                  button.icon.icon-list-view
+                li
+                  button.icon.icon-list-view2
+                li
+                  button.icon.icon-map-view
+
+          .row.list
+            .result-wrapper.col-sm-6.col-lg-4
+              .thumbnail-lg
+                .thumbnail-inner
+                  .img-wrap
+                    img(src="img/tmp/coffee.jpg")
+                  .copy-wrap 
+                    .copy-lg $209,00
+                    .copy-sm 950 SF
+                  .overlay-full
+                    a.btn(href="#") View Details
+                    ul.icon-list.list-inline.list-unstyled
+                      li
+                        a(href="#")
+                          span.icon-share-round
+                            span.path1
+                            span.path2
+                      li
+                        a(href="#")
+                          span.icon-like-round
+                            span.path1
+                                span.path2
+                .card
+                  .title Earth's Natrual Coffee
+                  .label.label-default-alt.label-xxs
+                    .label-inner ...
+                  .copy-sm / Retail / Merchandise
+                  .avatar
+                    img(src="img/tmp/avatar-round.jpg")
+                  ul.tags
+                    li
+                      a(href="#") Bank Financing
+                    li
+                      a(href="#") 3 Employees
+                    li
+                      a(href="#") $120k Cashflow
+                    li
+                      a(href="#") Storefront
+                    li
+                      a(href="#") FF&E Included 
+            .result-wrapper.col-sm-6.col-lg-4
+              .thumbnail-lg
+                .thumbnail-inner
+                  .img-wrap
+                    img(src="img/tmp/clothing.jpg")
+                  .copy-wrap 
+                    .copy-lg $1,250,000
+                    .copy-sm 2,350 SF
+                  .overlay-full
+                    a.btn(href="#") View Details
+                    ul.icon-list.list-inline.list-unstyled
+                      li
+                        a(href="#")
+                          span.icon-share-round
+                            span.path1
+                            span.path2
+                      li
+                        a(href="#")
+                          span.icon-like-round
+                            span.path1
+                                span.path2
+                .card
+                  .title Clothing Sotre Express
+                  .label.label-default-alt.label-xxs
+                    .label-inner ...
+                  .copy-sm / Retail / Merchandise
+                  .avatar
+                    img(src="img/tmp/avatar-round.jpg")
+                  ul.tags
+                    li
+                      a(href="#") Bank Financing
+                    li
+                      a(href="#") 3 Employees
+                    li
+                      a(href="#") $120k Cashflow
+                    li
+                      a(href="#") Storefront
+                    li
+                      a(href="#") FF&E Included 
+            .result-wrapper.col-sm-6.col-lg-4
+              .thumbnail-lg
+                .thumbnail-inner
+                  .img-wrap
+                    img(src="img/tmp/bookstore.jpg")
+                  .copy-wrap 
+                    .copy-lg $440,000
+                    .copy-sm 2 days ago
+                  .overlay-full
+                    a.btn(href="#") View Details
+                    ul.icon-list.list-inline.list-unstyled
+                      li
+                        a(href="#")
+                          span.icon-share-round
+                            span.path1
+                            span.path2
+                      li
+                        a(href="#")
+                          span.icon-like-round
+                            span.path1
+                                span.path2
+                .card
+                  .title The Corner Bookstore
+                  .label.label-default-alt.label-xxs
+                    .label-inner ...
+                  .copy-sm / Retail / Merchandise
+                  .avatar
+                    img(src="img/tmp/avatar-round.jpg")
+                  ul.tags
+                    li
+                      a(href="#") Bank Financing
+                    li
+                      a(href="#") 3 Employees
+                    li
+                      a(href="#") $120k Cashflow
+                    li
+                      a(href="#") Storefront
+                    li
+                      a(href="#") FF&E Included 
+            .result-wrapper.col-sm-6.col-lg-4
+              .thumbnail-lg
+                .thumbnail-inner
+                  .img-wrap
+                    img(src="img/tmp/bayfront.jpg")
+                  .copy-wrap 
+                    .copy-lg $1,250,000
+                    .copy-sm 2 days ago
+                  .overlay-full
+                    a.btn(href="#") View Details
+                    ul.icon-list.list-inline.list-unstyled
+                      li
+                        a(href="#")
+                          span.icon-share-round
+                            span.path1
+                            span.path2
+                      li
+                        a(href="#")
+                          span.icon-like-round
+                            span.path1
+                                span.path2
+                .card
+                  .title Bayfront Restaurant
+                  .label.label-default-alt.label-xxs
+                    .label-inner ...
+                  .copy-sm / Retail / Merchandise
+                  .avatar
+                    img(src="img/tmp/avatar-round.jpg")
+                  ul.tags
+                    li
+                      a(href="#") Bank Financing
+                    li
+                      a(href="#") 3 Employees
+                    li
+                      a(href="#") $120k Cashflow
+                    li
+                      a(href="#") Storefront
+                    li
+                      a(href="#") FF&E Included 
+            .result-wrapper.col-sm-6.col-lg-4
+              .thumbnail-lg
+                .thumbnail-inner
+                  .img-wrap
+                    img(src="img/tmp/fence.jpg")
+                  .copy-wrap 
+                    .copy-lg $78,500
+                    .copy-sm 2 days ago
+                  .overlay-full
+                    a.btn(href="#") View Details
+                    ul.icon-list.list-inline.list-unstyled
+                      li
+                        a(href="#")
+                          span.icon-share-round
+                            span.path1
+                            span.path2
+                      li
+                        a(href="#")
+                          span.icon-like-round
+                            span.path1
+                                span.path2
+                .card
+                  .title A-Z Fence Company
+                  .label.label-default-alt.label-xxs
+                    .label-inner ...
+                  .copy-sm / Retail / Merchandise
+                  .avatar
+                    img(src="img/tmp/avatar-round.jpg")
+                  ul.tags
+                    li
+                      a(href="#") Bank Financing
+                    li
+                      a(href="#") 3 Employees
+                    li
+                      a(href="#") $120k Cashflow
+                    li
+                      a(href="#") Storefront
+                    li
+                      a(href="#") FF&E Included 
+            .result-wrapper.col-sm-6.col-lg-4
+              .thumbnail-lg
+                .thumbnail-inner
+                  .img-wrap
+                    img(src="img/tmp/plumbing.jpg")
+                  .copy-wrap 
+                    .copy-lg $70,000
+                    .copy-sm 2 days ago
+                  .overlay-full
+                    a.btn(href="#") View Details
+                    ul.icon-list.list-inline.list-unstyled
+                      li
+                        a(href="#")
+                          span.icon-share-round
+                            span.path1
+                            span.path2
+                      li
+                        a(href="#")
+                          span.icon-like-round
+                            span.path1
+                                span.path2
+                .card
+                  .title Atomic Plumbing & Septic Services
+                  .label.label-default-alt.label-xxs
+                    .label-inner ...
+                  .copy-sm / Retail / Merchandise
+                  .avatar
+                    img(src="img/tmp/avatar-round.jpg")
+                  ul.tags
+                    li
+                      a(href="#") Bank Financing
+                    li
+                      a(href="#") 3 Employees
+                    li
+                      a(href="#") $120k Cashflow
+                    li
+                      a(href="#") Storefront
+                    li
+                      a(href="#") FF&E Included 
+            .result-wrapper.col-sm-6.col-lg-4
+              .thumbnail-lg
+                .thumbnail-inner
+                  .img-wrap
+                    img(src="img/tmp/hair.jpg")
+                  .copy-wrap 
+                    .copy-lg $150,000
+                    .copy-sm 950 SF
+                  .overlay-full
+                    a.btn(href="#") View Details
+                    ul.icon-list.list-inline.list-unstyled
+                      li
+                        a(href="#")
+                          span.icon-share-round
+                            span.path1
+                            span.path2
+                      li
+                        a(href="#")
+                          span.icon-like-round
+                            span.path1
+                                span.path2
+                .card
+                  .title High End Hair Salon
+                  .label.label-default-alt.label-xxs
+                    .label-inner ...
+                  .copy-sm / Retail / Merchandise
+                  .avatar
+                    img(src="img/tmp/avatar-round.jpg")
+                  ul.tags
+                    li
+                      a(href="#") Bank Financing
+                    li
+                      a(href="#") 3 Employees
+                    li
+                      a(href="#") $120k Cashflow
+                    li
+                      a(href="#") Storefront
+                    li
+                      a(href="#") FF&E Included 
+                      
+          .banner.spacing-md
+            img(src="img/tmp/ad-angies.jpg")

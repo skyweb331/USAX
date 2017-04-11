@@ -1,0 +1,12 @@
+.progress-container{
+  text-align: center;
+  .progress{
+    width: 100%;
+    height:4px;
+    display: inline-block;
+    vertical-align: middle;
+    .progress-bar-info{
+      background-color:$brand-secondary;
+    }
+  }  
+}

@@ -1,0 +1,8 @@
+test:
+  override:
+    - /bin/true
+deployment:
+  staging:
+    branch: master
+    commands:
+      - bin/deploy_staging_from_ci

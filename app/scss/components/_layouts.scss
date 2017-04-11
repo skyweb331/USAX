@@ -1,0 +1,56 @@
+// Column Heading
+.col-headwrap {
+  margin-bottom: 30px;
+  position: relative;
+
+  .col-heading {
+    margin: 0;
+    @include mq(mobile-only) { font-size: 14px; }
+
+    &.heading-icon {
+      font-weight: 400;
+
+      .icon {
+        display: none; 
+      }
+    }
+  }
+  .btn-dash {
+    position: relative;
+    top: 0px;
+
+    .caret {
+      margin-left: 10px; 
+    }
+  }
+  .btn-default {
+      position: absolute;
+      top: -3px;
+      right: 0;
+    }
+}
+@include mq(tablet-up) {
+  .col-headwrap {
+    margin-bottom: 40px;
+    .col-heading {
+      &.heading-icon {
+        margin-left: 40px;
+
+        .icon {
+          display: inline-block;
+          position: absolute;
+          top: 38%;
+          left: 0;
+          transform: translateY(-50%);
+          font-size: em(20px);
+        }
+      }
+    }
+    .btn-default {
+
+    }
+  }
+}
+
+
+// Ad Section

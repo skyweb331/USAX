@@ -1,0 +1,204 @@
+// Type
+.color-gray-dark {
+  color: $brand-gray-dark;
+}
+.color-gray-lighter {
+  color: $brand-gray-lighter;
+}
+.color-gray {
+  color: $brand-gray;
+}
+.color-white {
+  color: $white;
+}
+.color-primary {
+  color: $brand-primary;
+}
+.color-success {
+  color: $brand-success;
+}
+
+// Extra small 11
+.title-sm {
+  @extend .bold-xs;
+}
+
+// Extra Small 12
+.light-xs {
+  @extend .color-gray-lighter;
+  font-size: em(12px);
+  font-weight: $light;
+}
+.regular-xs {
+  color: $brand-gray;
+  font-size: em(12px);
+  font-weight: $regular;
+}
+.semibold-xs {
+  color: $brand-gray;
+  font-size: em(12px);
+  font-weight: $semibold;
+  text-transform: uppercase;
+}
+.bold-xs {
+  color: $brand-gray;
+  font-size: em(11px);
+  font-weight: $bold;
+  text-transform: uppercase;
+}
+// Super Small 13
+.light-ssm {
+  @extend .color-gray-lighter;
+  font-size: em(13px);
+  font-weight: $light;
+}
+.regular-ssm {
+  color: $brand-gray;
+  font-size: em(13px);
+  font-weight: $regular;
+}
+.semibold-ssm-white {
+  color: $white;
+  font-size: em(13px);
+  font-weight: $semibold;
+}
+// Small 14
+.regular-sm {
+  color: $brand-gray;
+  font-size: em(14px);
+  font-weight: $regular;
+}
+.regular-sm-primary {
+  color: $brand-primary;
+  font-size: em(14px);
+  font-weight: $regular;
+}
+.semibold-sm {
+  color: $brand-gray;
+  font-size: em(14px);
+  font-weight: $semibold;
+}
+.semibold-sm-primary {
+  color: $brand-primary;
+  font-size: em(14px);
+  font-weight: $semibold;
+}
+.semibold-sm-success {
+  color: $brand-success;
+  font-size: em(14px);
+  font-weight: $semibold;
+}
+// Small Medium 15
+.light-smd {
+  @extend .color-gray-lighter;
+  font-size: em(15px);
+  font-weight: $light;
+}
+.regular-smd {
+  color: $brand-gray-dark;
+  font-size: em(15px);
+  font-weight: $regular;
+}
+.regular-smd-primary {
+  color: $brand-primary;
+  font-size: em(15px);
+  font-weight: $regular;
+}
+.regular-smd-white {
+  color: $white;
+  font-size: em(15px);
+  font-weight: $regular;
+}
+.semibold-smd-success {
+  color: $brand-success;
+  font-size: em(15px);
+  font-weight: $semibold;
+}
+.semibold-smd-primary {
+  color: $brand-primary;
+  font-size: em(15px);
+  font-weight: $semibold;
+}
+// Medium 17
+.regular-md {
+  color: $brand-gray-dark;
+  font-size: em(17px);
+  font-weight: $regular;
+}
+.regular-md-white {
+  color: $white;
+  font-size: em(17px);
+  font-weight: $regular;
+}
+.semibold-md-primary {
+  color: $brand-primary;
+  font-size: em(17px);
+  font-weight: $semibold;
+}
+.semibold-md-success {
+  color: $brand-success;
+  font-size: em(17px);
+  font-weight: $semibold;
+}
+.semibold-md-white {
+  color: $white;
+  font-size: em(17px);
+  font-weight: $semibold;
+}
+// Small Large 21
+.regular-slg {
+  color: $brand-gray;
+  font-size: em(21px);
+  font-weight: $regular;
+}
+.regular-slg-primary {
+  color: $brand-primary;
+  font-size: em(21px);
+  font-weight: $regular;
+}
+// Large 27
+.regular-lg-white {
+  color: $white;
+  font-size: em(27px);
+  font-weight: $regular;
+}
+.regular-lg-primary {
+  color: $brand-primary;
+  font-size: em(27px);
+  font-weight: $regular;
+}
+.regular-lg {
+  @extend .color-gray-lighter;
+  font-size: em(27px);
+  font-weight: $regular;
+}
+.regular-lg-success {
+  color: $brand-success;
+  font-size: em(27px);
+  font-weight: $regular;
+}
+// Extra Large 40
+.light-xl-white {
+  color: $white;
+  font-size: em(38px);
+  font-weight: $light;
+}
+.regular-xl-white {
+  color: $white;
+  font-size: em(40px);
+  font-weight: $regular;
+}
+
+// General Copy
+.italic {
+  color: $brand-gray;
+  font-size: em(13px);
+  font-style: italic;
+}
+
+
+
+// Specific Copy
+.col-heading {
+  @extend .semibold-md-primary;
+}

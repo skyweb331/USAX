@@ -1,0 +1,71 @@
+nav#nav.navbar.navbar-fixed-top.visible-xs.visible-sm.visible-md
+  div.nav-center
+    button.hamburger.icon-list-view.badge-notification.sidebar-toggle
+      div.badge.badge-success 3
+
+    a.logo.img-wrap(href="index.html")
+      img(src="img/logo.png")
+    button.search-toggle.icon-search.sidebar-toggle
+
+aside.sidebar.sidebar-ltr.account-sidebar.clearfix
+  button.icon-close.sb-close
+  ul.account-links
+    li
+      a(href="#") 
+        div.icon.icon-bell
+        div.lesser Alerts
+    li
+      a(href="#")
+        div.icon.icon-chat-bubble.badge-notification
+          div.badge.badge-success 2
+        div.lesser Messages
+        
+    li
+      a(href="#") 
+        div.icon.icon-person
+        div.lesser Account
+  ul.nav-main
+    li 
+      a(href="#") Location: Sarasota, FL
+    li 
+      a(href="#") Business Opportunities
+    li 
+      a(href="#") Local Incentives
+    li 
+      a(href="#") News &amp; Events
+    li 
+      a(href="#") Member Search
+    li 
+      a(href="#") Request For Proposals
+    li 
+      a(href="#") Business Services
+    li 
+      a(href="#") More
+    li 
+      a(href="#") Contact Us
+  div.account-buttons
+    .col-xs-6
+      button.btn.btn-primary.btn-md.btn-block(type='button', data-toggle='modal', data-target='#signupModal') Sign Up
+    .col-xs-6
+      button.btn.btn-success.btn-md.btn-block(type='button', data-toggle='modal', data-target='#loginModal') Log In
+
+aside#exchange-list.sidebar.sidebar-rtl.search-sidebar.clearfix
+  button.icon-close.sb-close
+  div.search-input-wrap
+    input.form-control.search(placeholder="Search The Exchange")
+  p.search-title Recent Searches
+  ul.search-results.list
+    li 
+      a(href="#").name restaurants
+    li 
+      a(href="#").name pizza restaurant
+    li 
+      a(href="#").name burger restaurant
+    li 
+      a(href="#").name fine dining
+    li 
+      a(href="#").name gas stations
+    li 
+      a(href="#").name car dealerships
+    li 
+      a(href="#").name fishing wharf

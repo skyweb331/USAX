@@ -1,0 +1,39 @@
+.content-box-sm {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 3px;
+  position: relative;
+  width: 100%;
+  background-color: $brand-gray-lightest; 
+
+  .img-outter {
+    height: 70px;
+    float: left;
+  }
+  .content-box-inner {
+    height: 70px;
+    float: left;
+    padding: 15px;
+  }
+  p {
+    margin: 0;
+  }
+  .label {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+@include mq(large-desktop-up) {
+  .content-box-sm {
+    p {
+      margin: 2px 0;
+    }
+    .label {
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 15px;
+    }
+  }
+}

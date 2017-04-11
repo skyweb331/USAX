@@ -1,0 +1,34 @@
+- var bodyClasses = [];
+- var mainDivClasses = [];
+block vars
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    title USAX
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,300,300italic,900' rel='stylesheet' type='text/css')
+    link(rel="stylesheet", href="https://i.icomoon.io/public/599ba84f12/USAX/style.css")
+    link(href='css/lib.css', rel='stylesheet')
+    link(href='css/main.css', rel='stylesheet')
+    //if lte IE 9
+      script(src='//cdnjs.cloudflare.com/ajax/libs/Base64/0.3.0/base64.min.js')
+      script(src='//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body(class=bodyClasses)
+    include _header.pug
+    include _header-mobile.pug
+    main#main(class=mainDivClasses)
+      block content
+    include _footer.pug
+    div.sidebar-overlay
+    script(src='js/plugins/jquery.min.js')
+    script(src='js/plugins/bootstrap.min.js')
+    script(src='js/plugins/swiper.jquery.min.js')
+    script(src='js/plugins/retina.min.js')
+    script(src='js/plugins/list.min.js')
+    script(src='js/plugins/nouislider.min.js')
+    script(src='js/plugins/wNumb.js')
+    script(src='js/main.js')

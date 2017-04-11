@@ -1,0 +1,108 @@
+// Nav Global
+.nav {
+  li {
+    display: inline-block;
+
+    a {
+      text-transform: uppercase;
+
+      &:hover, &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+// Nav Steaks
+.nav-steaks {
+  li {
+    &:first-child {
+      a {
+        padding-left: 15px;
+      }
+    }
+    &:last-child {
+      a:after {
+        display: none;
+      }
+    }
+  }
+  a {
+    padding: 0 10px;
+    position: relative;
+    @extend .bold-xs;
+
+    &:after {
+      height: 9px;
+      width: 1px;
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%);
+      background-color: $brand-gray;
+    }
+  }
+}
+
+// Nav Border
+.nav-border {
+  li {
+    border-left: 1px solid #E6E6E6;
+  }
+  a {
+    display: inline-block;
+    padding: 13px 15px;
+    position: relative;
+    @extend .bold-xs;
+  }
+  .language {
+    img {
+      margin-right: 10px;
+      position: relative;
+      top: -1px;
+    }
+    .caret {
+      margin-left: 9px;
+      position: relative;
+      top: -1px;
+    }
+  }
+}
+
+.nav-full {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  li {
+    width: 100%;
+
+    a {
+      transition: all 0.2s ease;
+      padding: 10px;
+      background: $brand-primary;
+      border-radius: 0px;
+      border-right: 2px solid #424271;
+      color: $white;
+      font-size: em(14px);
+      font-weight: $regular;
+      text-transform: uppercase;
+
+      &:hover{
+        background-color: $brand-success;
+        border-right: 2px solid $brand-success;
+      }
+      &:focus, &:active {
+        background: $brand-primary;
+        border-right: 2px solid #424271;
+      }
+    }
+    &:last-child {
+      a {
+        border-right: none;
+      }
+    }
+  }
+}

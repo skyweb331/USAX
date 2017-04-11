@@ -1,0 +1,53 @@
+// Hero Slider
+#hero-slider {
+  padding: 100px 0 0;
+  position: relative;
+  background-size: cover;
+  background-position: top;
+
+  .container {
+    position: relative;
+  }
+
+  h1 {
+    @extend .light-xl-white;
+    margin-bottom: 15px;
+  }
+  p {
+    @extend .regular-md-white;
+    margin-bottom: 25px;
+  }
+  h2 {
+    @extend .semibold-xs;
+    display: inline-block;
+    margin: 0 0 18px;
+    text-transform: uppercase;
+  }
+}
+.vid-fullscreen {
+  height: 100%;
+  width: 100%;
+}
+@include mq(tablet-up) {
+  #hero-slider {
+    .card-hero {
+      position: absolute;
+      bottom: 0;
+      right: 15px;
+      width: 33%;
+    }
+    .card-inner {
+      width: 100%;
+    }
+  }
+}
+@include mq(large-desktop-up) {
+  #hero-slider {
+    padding: 80px 0 0;
+
+    .card-hero {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

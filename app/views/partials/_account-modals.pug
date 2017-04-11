@@ -1,0 +1,91 @@
+#loginModal.modal.fancy-modal.fade(tabindex='-1', role='dialog')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        .header-banner
+          img(src="img/footer-logo.png")
+        .h2.modal-title Welcome Back
+        p Don't have an account?
+          button.btn.btn-link(type='button', data-dismiss="modal", data-toggle='modal', data-target='#signupModal') Register
+      .modal-body
+        .social-bundle.row
+          .modal-subtitle.bold-xs Login With
+          .col-sm-6
+            button.btn.btn-default.btn-block
+              span.icon.icon-fb-round
+              | Facebook
+          .col-sm-6
+            button.btn.btn-default.btn-block
+              span.icon.icon-tw-round
+              | Twitter
+          .col-sm-6
+            button.btn.btn-default.btn-block
+              span.icon.icon-li-round
+              | Linkedin
+          .col-sm-6
+            button.btn.btn-default.btn-block
+              span.icon.icon-gp-round
+              | Google+
+        form.account-forms
+          .modal-subtitle.bold-xs Or by email
+          .form-group
+            input.form-control(type='email', placeholder='Username')
+          .form-group
+            input.form-control(type='password', placeholder='Password')
+            button.btn.btn-link Forgot?
+          button.btn.btn-success.btn-lg.btn-block.btn-submit(type='submit', data-dismiss="modal") Login to The Exchange
+
+#signupModal.modal.fancy-modal.fade(tabindex='-1', role='dialog')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        .header-banner
+          img(src="img/footer-logo.png")
+        .h2.modal-title Join The Exchange
+        p Have an account?
+          button.btn.btn-link(type='button', data-dismiss="modal", data-toggle='modal', data-target='#loginModal') Login
+      .modal-body
+        .social-bundle.row
+          .modal-subtitle.bold-xs Login With
+          .col-sm-6
+            button.btn.btn-default.btn-block
+              span.icon.icon-fb-round
+              | Facebook
+          .col-sm-6
+            button.btn.btn-default.btn-block
+              span.icon.icon-tw-round
+              | Twitter
+          .col-sm-6
+            button.btn.btn-default.btn-block
+              span.icon.icon-li-round
+              | Linkedin
+          .col-sm-6
+            button.btn.btn-default.btn-block
+              span.icon.icon-gp-round
+              | Google+
+        form.account-forms
+          .modal-subtitle.bold-xs Or by email
+          .form-group
+            input.form-control(type='text', placeholder='Company (Optional)')
+          .form-group.row
+            .col-sm-6
+              input.form-control(type='text', placeholder='First Name')
+            .col-sm-6
+              input.form-control(type='text', placeholder='Last Name')
+          .form-group
+            input.form-control(type='email', placeholder='Email')
+          .form-group
+            input.form-control(type='email', placeholder='Confirm Email')
+          .form-group
+            input.form-control(type='password', placeholder='Password')
+          .form-group
+            input.form-control(type='password', placeholder='Confirm Password')
+          div.copy-scroll
+            .cs-overlay
+            .modal-subtitle.bold-xs Terms of service
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel urna sagittis arcu ullamcorper molestie. Proin sed felis euismod, congue ex eu, molestie sapien. Ut pulvinar sapien vitae justo maximus, sit amet molestie tellus consequat. Mauris sed lorem eu orci scelerisque congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi tempor lorem ac dolor posuere, eget ultricies erat vestibulum. Ut justo libero, aliquam ut eleifend a, laoreet eget eros. Fusce facilisis nec ex sit amet tincidunt. Aenean fermentum laoreet nibh at dictum. Etiam nec tristique erat, sit amet egestas diam. Aliquam erat volutpat. Nunc eu vehicula nisl. Maecenas eget elit sed diam mattis tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            p Vivamus accumsan vestibulum commodo. Proin at nisl congue, aliquam ipsum eu, ultrices est. Mauris sit amet arcu tincidunt, laoreet justo sit amet, semper tellus. Suspendisse elementum sit amet nulla nec sagittis. Pellentesque hendrerit est nec urna efficitur, vehicula semper diam condimentum. In hac habitasse platea dictumst. Phasellus blandit imperdiet orci, ac congue est pretium luctus. Duis vitae erat non est mollis ornare.
+            p Fusce sed ante vel metus tristique eleifend sed in nulla. Nullam nec metus sapien. Sed condimentum justo pretium augue feugiat, non rutrum odio laoreet. Etiam euismod imperdiet lectus, ac ultrices sapien pellentesque in. Aliquam at orci a nisl viverra gravida. Integer tincidunt ex viverra felis commodo accumsan in commodo lorem. Vivamus dapibus mi vel mi elementum varius. Suspendisse potenti. Pellentesque non ornare justo. Morbi consequat interdum pellentesque. Etiam cursus ultricies mauris, id molestie nibh ultrices et. Donec porttitor porta quam. Integer lacinia in lectus eu congue.
+            p Vestibulum pellentesque a ex non pellentesque. Vestibulum et lorem placerat, accumsan sapien eget, eleifend erat. Curabitur a pharetra risus, sed sodales nisi. Duis ut quam ante. Ut eget interdum nulla. Aliquam sagittis scelerisque justo, eget placerat lectus dapibus eget. Nullam ut tempor elit, non dictum nisi. Duis nec facilisis ex, vel condimentum tellus. Phasellus orci velit, consequat quis tincidunt ut, tempus a neque. Sed sollicitudin tempor dui sodales mattis. Aenean hendrerit aliquet nisi id efficitur. Nullam at urna at mi congue egestas eget pellentesque ipsum.
+            p Ut efficitur est sed ipsum molestie posuere. Donec dapibus est mattis fringilla pulvinar. Sed a libero sit amet lacus ornare congue in ut enim. Praesent dignissim dui in rhoncus interdum. Aenean ultricies semper sodales. Proin egestas dolor dui, nec euismod eros sodales vel. Duis lobortis dapibus tempor. Proin leo urna, dapibus in arcu vel, congue aliquet diam. Nulla finibus, massa finibus auctor facilisis, tellus mi bibendum dui, non venenatis nisi nisi vel ex. Sed pulvinar velit eu nisl faucibus pharetra. Sed eleifend interdum lectus, vitae congue neque elementum eu. Integer sagittis neque nec neque venenatis, ut malesuada mi lobortis. In faucibus pretium turpis vel mattis. Nulla molestie purus quis lorem scelerisque iaculis. Integer ut lacus at magna elementum laoreet et sed risus.
+          button.btn.btn-success.btn-lg.btn-block.btn-submit(type='submit', data-dismiss="modal") Signup to The Exchange

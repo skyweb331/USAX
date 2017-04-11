@@ -1,0 +1,162 @@
+// Button Sizes
+.btn {
+  border: 0;
+  outline: none !important;
+  font-weight: 600;
+
+  &:hover {
+    border: 0;
+  }
+}
+.btn-lg {
+  font-size: em(17px);
+  min-width: 205px;
+  padding: 12px 16px;
+}
+.btn-md {
+  font-size: em(15px);
+  min-width: 168px;
+  padding: 10px 14px;
+
+  &.btn-wide {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.btn-sm {
+  font-size: em(13px);
+  min-width: 123px;
+  padding: 6px;
+}
+.btn-xs {
+  font-size: em(11px);
+  text-transform: uppercase;
+  padding: 4px 8px;
+}
+
+.btn-lower {
+  text-transform: lowercase;
+}
+.btn-upper {
+  text-transform: uppercase
+}
+
+// Button Colors
+.btn-success {
+  color: $white;
+
+  &:hover {
+    background-color: lighten($brand-success, 3%)
+  }
+}
+
+.btn-primary {
+  color: $white;
+
+  &:hover {
+    background: #444473;
+  }
+}
+
+// Button Variations
+.btn-default {
+  border: 1px solid #E8E8EE;
+  color: #848383;
+  background: $white;
+
+  &:hover {
+    border: 1px solid $brand-gray-lighter;
+    background: $white;
+    color: #50575E;
+  }
+}
+.btn-gray {
+  background-color: $brand-gray;
+  color: $white;
+
+  &:hover {
+    background: #F1F1F2;
+  }
+  &:focus {
+    color: $white;
+  }
+}
+.btn-gray-light{
+  background-color: $brand-gray-lightest;
+  color: $brand-gray-dark;
+
+  &:hover {
+    background-color: darken($brand-gray-lightest, 3%)
+  }
+}
+
+.btn-dash {
+  padding: 0 0 2px;
+  background-color: transparent;
+  border-bottom: dashed 1px $brand-primary;
+  color: $brand-primary;
+  font-size: em(15px);
+  font-weight: $semibold;
+
+  &:hover {
+    border-bottom: dashed 1px $brand-primary;
+  }
+  &:active {
+    box-shadow: none;
+  }
+}
+
+
+// Button Dropdowns
+.btn-dropdown {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+  padding-left: 0px;
+  color: $brand-primary;
+  font-size: em(16px);
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+
+  .caret {
+    margin-left: 7px;
+    position: relative;
+    top: -1px;
+  }
+}
+.btn-dropdown-img {
+  display: flex;
+  align-items: center;
+  
+  .avatar {
+    border-radius: 50%;
+  }
+  .text {
+    display: inline-block;
+    color: $brand-gray;
+    font-size: em(14px);
+    font-weight: $semibold;
+
+  }
+  .caret {
+    display: inline-block;
+    margin-left: 8px;
+    position: relative;
+    top: 1px;
+    color: $brand-gray;
+  }
+  &:hover {
+    .text, .caret {
+      color: #5F656B;
+    }
+  }
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+
+
+

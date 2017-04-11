@@ -1,0 +1,45 @@
+// Random Icons
+.caret {
+  border-top: 5px dashed;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+
+// Icomoon Icons
+.icon-bell {
+  color: $brand-gray-light;
+}
+.icon-chat-bubble {
+  color: $brand-primary;
+}
+.icon-play {
+  cursor: pointer;
+  
+  font-size: 70px;
+
+  .path1 {
+    &:before {
+      color: $white;
+    }
+  }
+  .path2 {
+    &:before {
+      color: $brand-primary;
+    }
+  }
+}
+
+// social links
+.icon-fb-round {
+  color: $brand-facebook;
+}
+.icon-tw-round {
+  color: $brand-twitter;
+}
+.icon-li-round {
+  color: $brand-linkedin;
+}
+.icon-gp-round {
+  color: $brand-googleplus;
+}

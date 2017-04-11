@@ -1,0 +1,156 @@
+// Thumbail Styles
+.thumbnail-lg {
+  @extend .clearfix;
+  display: block;
+  margin-bottom: 50px;
+  max-height: none;
+  @include mq(mobile-only) {
+    max-width: 300px;
+    margin: 0 auto 50px;
+  }
+
+  .btn {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+    position: absolute;
+    max-width: 170px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background-color: #60B872;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: transform .3s ease-out, background .3s;
+
+    &:hover {
+      background-color: #54A063;
+    }
+    &:active {
+      background-color: #418A50;
+    }
+  }
+  &:hover {
+    .overlay-full {
+      opacity: 1;
+    }
+    .btn {
+      transform: translateY(-50%);
+    }
+  }
+  .thumbnail-inner {
+    display: inline-block;
+    width: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  }
+  .img-wrap {
+    img {
+      width: 100%;
+    }
+  }
+  .copy-wrap {
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    color: $white;
+    font-family: $primary-font;
+    text-align: center;
+  }
+  .copy-lg {
+    font-size: em(27px);
+  }
+  .copy-sm {
+    font-size: em(12px);
+    font-weight: 800;
+  }
+  .overlay-full {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(40, 40, 63, 0.8);
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  .icon-list {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      float: right;
+      padding: 5px;
+      overflow: hidden;
+
+      a {
+        display: inline-block;
+        border-radius: 50%;
+        transform: scale(.5);
+        opacity: 0;
+        font-size: 24px;
+        transition: all .3s cubic-bezier(0.000, 0.690, 0.595, 1.535);
+
+        @at-root .thumbnail-lg:hover .icon-list li a {
+          transform: scale(1);
+          opacity: 1;
+          transition-delay: .15s;
+        }
+        @at-root .thumbnail-lg:hover .icon-list li:nth-child(1) a {
+          transition-delay: .25s;
+        }
+        @at-root .thumbnail-lg:hover .icon-list li:nth-child(2) a {
+          transition-delay: .35s;
+        }
+        @at-root .thumbnail-lg:hover .icon-list li:nth-child(3) a {
+          transition-delay: .45s;
+        }
+      }
+    }
+  }
+  .card {
+    float: left;
+    padding: 15px 25px;
+    position: relative;
+
+    .title {
+      @extend .semibold-md-primary;
+      margin-bottom: 5px;
+    }
+    > .label {
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .copy-sm {
+      display: inline-block;
+      @extend .semibold-xs;
+      text-transform: none;
+    }
+    .tags {
+      margin: 20px 0 0 0;
+
+      a {
+        @extend .semibold-xs;
+        text-transform: none;
+        background-color: $brand-gray-lightest;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+    .avatar {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.dropdown {
+  .caret {
+    margin-left: 5px;
+  }
+}
+.dropdown-menu {
+  margin: 0;
+  padding: 15px 0;
+  min-width: 300px;
+  background: #fff;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 11px 25px 0px rgba(0,0,0,0.18);
+
+  .dd-header, .dd-body {
+    padding-right: 15px;
+    padding-left: 35px;
+  }
+  .divider {
+    margin: 0;
+  }
+  .dd-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      margin: 0;
+    }
+  }
+  .dd-body {
+    max-height: 450px;
+    overflow: scroll;
+  }
+  ul {
+    @extend .list-unstyled;
+
+    li {
+      display: block;
+      border: none;
+
+      &:last-child {
+        a {
+          margin: 0;
+        }
+      }
+    }
+    a {
+      margin-bottom: 7px;
+      padding: 0;
+      color: $brand-primary;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: none !important;
+    }
+  }
+}
+
+// location dropdown
+.dd-location {
+  .title-sm {
+    margin: 20px 0 10px;
+  }
+  ul {
+    .btn {
+      padding-left: 0;
+    }
+  }
+}
+
+// account dropdown
+.dd-account {
+  padding: 0;
+
+  ul {
+    margin: 0;
+    padding: 30px;
+  }
+  li {
+    @extend .clearfix;
+    margin: 0 0 10px !important;
+
+    &:last-child {
+      margin: 0 !important;
+    }
+  }
+  .badge-inline {
+    float: right;
+  }
+}
+
+// dropdown sizes
+.dd-md {
+  min-width: 260px;
+}
+.dd-lg {
+  padding-bottom: 15px;
+
+  .dd-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+// dropdown direction
+.dd-rtl {
+  left: auto;
+  right: 0;
+}

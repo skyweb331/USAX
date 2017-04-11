@@ -1,0 +1,259 @@
+extends ./partials/_layout.pug
+
+block content
+	section#opportunity-section
+		include ./partials/_opportunity-sidebar.pug
+		.opportunity-wrapper.mCustomScrollbar(data-mcs-theme="minimal")
+			.opportunity-container
+				.header-wrapper
+					h2.regular-lg-primary Add Your Business Opportunity
+					.progress-container
+						.progress
+							.progress-bar.progress-bar-info(role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%")
+						span.progress-info 20% Done
+				hr.divider
+				.body-wrapper
+					.section
+						.title-wrapper
+							span.rect-badge 1
+							span.title-text Category
+						.property-wrapper
+							.property.required
+								.property-title                
+									span.semibold-md-primary Type of Opportunity
+									span.description (Choose from one of the following categories)
+								.property-body.box-choice-container
+									.box-choice.selected
+										.box-choice-inner
+											span Business For Sale
+									.box-choice
+										.box-choice-inner
+											span Commercial &amp; Industrial Property for Lease
+									.box-choice
+										.box-choice-inner
+											span Commercial &amp; Industrial Property for Lease
+									.box-choice
+										.box-choice-inner
+											span Direct Marketing
+									.box-choice
+										.box-choice-inner
+											span Commercial &amp; Industrial Property for Lease
+									.box-choice
+										.box-choice-inner
+											span Commercial &amp; Industrial Property for Lease
+							.property.required
+								.property-title                
+									span.semibold-md-primary Select Primary Category
+									span.description (Select the primary category for your listing)
+								.property-body.dropdown-choice-container
+									select.wide
+										option Alabama
+										option Alaska
+										option Arizona
+										option Arkansas
+										option California
+										option Colorado
+							.property.required
+								.property-title                
+									span.semibold-md-primary Select Sub Category
+									span.description (Choose from up to 3 following subcategories)
+								.property-body.choice-container
+									.row
+										.col-md-6  
+											label #[input(type='radio', value=0, checked='')] 
+												span Restaurants &amp; Other Eating Places
+										.col-md-6
+											label #[input(type='radio')]
+												span Drinking Places
+										.col-md-6
+											label #[input(type='radio')] 
+												span Food Service Contractors
+										.col-md-6
+											label #[input(type='radio', checked='')] 
+												span Caterers
+										.col-md-6
+											label #[input(type='radio')] 
+												span Mobile Food Services
+										.col-md-6
+											label #[input(type='radio', checked='')] 
+												span Full-Service Restaurants
+										.col-md-6
+											label #[input(type='radio')] 
+												span Cafeterias, Grill Buffets &amp; Buffets
+					hr.divider
+					.section
+						.title-wrapper
+							span.rect-badge 2
+							span.title-text Listing Details
+						.property-wrapper
+							.row
+								.property.col-md-6
+									.property-title                
+										span.semibold-md-primary Additional Information
+									.property-body.info-form
+										.form-field
+											.form-title.text-left Years In Business
+											.form-input
+												input.form-control.half-width(type='text', value='12')
+										.form-field
+											.form-title.text-left Annual Revenues
+											.form-input
+												input.form-control(type='text', value='$540,000')
+										.form-field
+											.form-title.text-left Number of Employees
+											.form-input
+												input.form-control.half-width(type='text', value='37')
+										.form-field
+											.form-title.text-left Cash Flow
+											.form-input
+												.has-desc
+													input.form-control.half-width(type='text', value='47%')
+													span $27,383
+								.property.col-md-6
+									.property-title
+										span.semibold-md-primary Select All Applicable
+										span.description (Multiple Selection Allowed)
+									.property-body.choice-container
+										.row
+											.col-md-12  
+												label #[input(type='checkbox', value='0', checked='', name="1")] 
+													span Owner Financing
+											.col-md-12
+												label #[input(type='checkbox', value='0', checked='', name="2")]
+													span Distressed
+											.col-md-12
+												label #[input(type='checkbox', value='0', name="3")] 
+													span Bank Financing
+											.col-md-12
+												label #[input(type='checkbox', value='0', name="4")] 
+													span Asset Sale
+							.row
+								.property
+									.property-title
+										span.semibold-md-primary Enter Any Additional Descriptors, Keywords or Identifiers
+										span.description (Add up to 4 custom tags)
+									.property-body
+										.tag-manage.half-width
+											.tag-input
+												input.form-control(type='text', value='Italian Cuisine')
+												button.btn.btn-success Add
+											.tag-list
+												ul.tags
+													li
+														|Waterfront
+														a(href='#')
+															i.fa.fa-close
+													li
+														|FF &amp; E included
+														a(href='#')
+															i.fa.fa-close
+							.row
+								.property
+									.property-title
+										span.semibold-md-primary Additional Information
+									.property-body.additional-form
+										.form-field
+											.form-title.text-left.required Headline
+											.form-input
+												input.form-control(type='text', value='Bayfront Restaurant')
+										.form-field
+											.form-title.text-left.required About
+											.form-input
+												textarea.form-control
+										.form-field
+											.form-title.text-left Listing Price
+											.form-input
+												input.form-control.wide-3(type='text', value='$1,250,000')
+										.form-field
+											.form-title.text-left.required Select Your Country
+											.form-input
+												.wide-7
+													select.wide
+														option(value="California") US
+														option(value="Alaska") Canada
+										.form-field
+											.form-title.text-left Physical Address
+											.form-input
+												input.form-control.wide-7(type='text', placeholder='Street')
+												br
+												.nested-input.wide-7
+													div
+														select.wide
+															option(value="California") California
+															option(value="Alaska") Alaska
+													.wide-4
+														input.form-control(type='text', placeholder='Zipcode')
+					hr.divider
+					.section
+						.title-wrapper
+							span.rect-badge 3
+							span.title-text Upload Media
+						.property-wrapper
+							.property
+								.property-title
+									span.semibold-md-primary Upload Your Photos
+									span.description (Add up to 8 photos)
+								.property-body
+									.row
+										.col-md-6.col-lg-4
+											.photo-upload
+												.thumbnail-inner
+													.img-wrap
+														img(src='img/tmp/bayfront.png')
+												.description
+													textarea.form-control(placeholder='Add Description...') Outdoor eating area facing the waterfront. Great outdoor lighting and beautiful sunsets.
+												hr.divider
+												.action
+													label #[input(type="radio" name="default" value="1" checked='')]
+														span Make Default
+										.col-md-6.col-lg-4
+											.photo-upload
+												.thumbnail-inner
+													.img-wrap
+														img(src='img/tmp/dining.png')
+												.description
+													textarea.form-control(placeholder='Add Description...') Inside dining area of the main lobby. Window seat available.
+												hr.divider
+												.action
+													label #[input(type="radio" name="default" value="2")]
+														span Make Default
+										.col-md-6.col-lg-4
+											.photo-upload
+												.thumbnail-inner
+													.img-wrap
+														img(src='img/tmp/food.png')
+													.uploading
+														span.filename MealExample001.jpg
+														.progress-container
+															.progress
+																.progress-bar.progress-bar-info(role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%")
+															span.progress-info 67% Uploaded
+												.description
+													textarea.form-control(placeholder='Add Description...')
+												hr.divider
+												.action
+													label #[input(type="radio" name="default" value="3")]
+														span Make Default
+							.property
+								hr.divider-dash
+								.property-title
+									span.semibold-md-primary Upload or Link Your Videos
+									span.description (Add up to 3 videos)
+								.property-body
+									.row.video-upload
+										.col-md-5.video-url
+											span Enter Url
+											input.form-control(type='text',placeholder='http://')
+											.sites
+												img(src='img/youtube.png')
+												img(src='img/vimeo.png')
+										.col-md-1 
+												span.between-text OR
+										.col-md-5
+											input.btn.btn-md.btn-wide.btn-success(type='button' value='Upload File...')
+							.property
+								hr.divider-dash
+								.property-title
+									a.btn.btn-sm.btn.wide.btn-success(href='#') Add Documents
+									span.semibold-md-primary Upload Your Documents (PDF)
+									span.description (Add up to 3 Documents)

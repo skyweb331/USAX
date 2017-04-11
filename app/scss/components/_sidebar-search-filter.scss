@@ -1,0 +1,76 @@
+.sidebar-search-filter {
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  background-color: $white;
+
+  .search-type-results {
+    @extend .list-unstyled;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    li {
+      border-bottom: 1px solid #eeeeee;
+
+      &:last-child {
+        border: none;
+      }
+    }
+    button {
+      @extend .btn;
+      @extend .btn-link;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: $brand-gray;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: none;
+    }
+    .badge {
+      width: 40px;
+      color: $brand-gray;
+      background-color: transparent;
+    }
+    .active .badge {
+      color: $white;
+      background-color: $brand-primary;
+    }
+  }
+  .sidebar-title {
+    @extend .bold-xs;
+    margin: 30px 0 20px;
+  }
+  .divider {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .input-icon {
+    width: 100%;
+
+    .form-control {
+      height: 36px;
+      background-color: $brand-gray-lightest;
+    }
+  }
+  .sb-segment {
+    margin-bottom: 35px;
+  }
+  .sb-subheading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .sb-subtitle {
+    @extend .semibold-sm-primary;
+  }
+  .checkbox label {
+    color: $brand-gray;
+  }
+}

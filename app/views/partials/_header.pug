@@ -1,0 +1,194 @@
+include _account-modals.pug
+header#nav.navbar.navbar-fixed-top.hidden-xs.hidden-sm.hidden-md
+  div.nav-top
+    ul.nav.nav-steaks
+      li
+        a(href="#") About
+      li
+        a(href="#") Resources
+      li
+        a(href="#") Veterans
+    div.text-center
+      em.italic The Place Where America's Deals Are Done."
+    ul.nav.nav-border
+      li
+        a(href="#") Support
+
+      li.dropdown
+        a#addTypeDD(href="#", type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="fase")
+          span.icon-plus.mr-5
+          |  Add
+        .dropdown-menu.dd-rtl(aria-labelledby="addTypeDD")
+          .dd-header
+            .title-sm Select a state
+          .dd-body
+            ul
+              li
+                a(href="#") Business Opportunity
+              li
+                a(href="#") Local Incentive
+              li
+                a(href="#") Company / Organization
+
+      li.language
+        a#languageDD(href="#", type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="fase")
+          img(src="img/us.jpg")
+          | English
+          span.caret
+        .dropdown-menu.dd-rtl(aria-labelledby="languageDD")
+          .dd-header
+            .title-sm Select a state
+          .dd-body
+            ul
+              li
+                a(href="#") 
+                  img(src="img/us.jpg")
+                  span English
+              li
+                a(href="#") 
+                  img(src="#")
+                  span Chinese
+              li
+                a(href="#") 
+                  img(src="#")
+                  span Portugese
+              li
+                a(href="#") 
+                  img(src="#")
+                  span Japanese
+              li
+                a(href="#") 
+                  img(src="#")
+                  span Russian
+              li
+                a(href="#") 
+                  img(src="#")
+                  span Hindu
+              li
+                a(href="#") 
+                  img(src="#")
+                  span Spanish
+
+  div.nav-center
+    div.dropdown
+      div.semibold-xs Location
+      button#locationDD.btn.btn-link.btn-dropdown(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="fase") Choose Location
+        span.caret
+      .dropdown-menu.dd-lg.dd-location(aria-labelledby="locationDD")
+        .dd-header
+          p.semibold-md-primary US States
+          button.btn.btn-default
+            span.icon-map-view 
+            | Map
+        .divider(role="separator")
+        .dd-body
+          .title-sm Select a state
+          ul
+            li 
+              button.btn.btn-link Alabama
+            li
+              button.btn.btn-link Alaska
+            li
+              button.btn.btn-link Arizona
+            li
+              button.btn.btn-link Arkansas
+            li
+              button.btn.btn-link California
+            li
+              button.btn.btn-link Colorado
+            li
+              button.btn.btn-link Alabama
+            li
+              button.btn.btn-link Alaska
+            li
+              button.btn.btn-link Arizona
+            li
+              button.btn.btn-link Arkansas
+            li
+              button.btn.btn-link California
+            li
+              button.btn.btn-link Colorado
+            li
+              button.btn.btn-link Arizona
+            li
+              button.btn.btn-link Arkansas
+            li
+              button.btn.btn-link California
+            li
+              button.btn.btn-link Colorado
+            li
+              button.btn.btn-link Alabama
+            li
+              button.btn.btn-link Alaska
+            li
+              button.btn.btn-link Arizona
+            li
+              button.btn.btn-link Arkansas
+            li
+              button.btn.btn-link California
+            li
+              button.btn.btn-link Colorado
+
+
+    a.logo.img-wrap(href="index.html")
+      img(src="img/logo.png")
+    div.va-center
+      .input-group.input-icon
+        input.form-control(type='text', placeholder='Search The Exchange')
+        button.btn.btn-link.icon.icon-search
+
+      div.nav.va-center
+        li
+          a(href="#").icon.icon-bell
+        li.chat-wrap
+          a(href="#").icon.icon-chat-bubble
+          span.badge.badge-success
+            span.badge-inner 2
+        li
+          button#accountDD.btn.btn-link.btn-dropdown-img(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="fase")
+            span.avatar.mr-10
+              img(src="img/tmp/avatar-round.jpg")
+            span.text David
+            span.caret
+          .dropdown-menu.dd-rtl.dd-account.dd-md(aria-labelledby="accountDD")
+            ul
+              li
+                a(href="#") Manage My Account
+              li
+                a(href="#") My Saved Items
+                .badge-inline
+                  .badge.badge-sqaure 12
+              li
+                a(href="#") Settings
+              li
+                button.btn.btn-sm.btn-default.btn-xs(type='button', data-toggle='modal', data-target='#loginModal') Logout
+            .divider(role="separator")
+            ul
+              li
+                .title-sm Select a state
+              li
+                a(href="#") Sarasota EDO
+                .badge-inline
+                  img(src="#")
+              li
+                a(href="#") Mossio
+                .badge-inline
+                  img(src="#")
+              li
+                button.btn.btn-sm.btn-default.btn-xs Add new
+
+
+  div.nav-bottom
+    ul.nav.nav-full.list-unstyled
+      li
+        a.btn.btn-primary(href="results.html") Business Opportunities
+      li
+        a.btn.btn-primary(href="#") Local Incentives
+      li
+        a.btn.btn-primary(href="#") News &amp; Events
+      li
+        a.btn.btn-primary(href="#") Member Search
+      li
+        a.btn.btn-primary(href="#") Request For Proposals
+      li
+        a.btn.btn-primary(href="#") Business Services

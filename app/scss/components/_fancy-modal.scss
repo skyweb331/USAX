@@ -1,0 +1,116 @@
+$banner-dimensions: 110px;
+
+.fancy-modal {
+  .modal-content {
+    top: 60px;
+  }
+  .modal-header {
+    padding-top: 60px;
+
+    .modal-title {
+      @extend .regular-lg-primary;
+      margin-bottom: 8px;
+    }
+    p {
+      color: $brand-gray;
+    }
+    .btn-link {
+      padding: 5px;
+      color: #4FA75D;
+      font-weight: 600;
+      line-height: 1;
+    }
+  }
+  .header-banner {
+    height: $banner-dimensions;
+    width: $banner-dimensions;
+    margin: 0 auto;
+    position: absolute;
+    top: -55px;
+    right: 0;
+    left: 0;
+    background-color: $brand-gray-lightest;
+    border: 8px solid $white;
+    border-radius: 50%;
+    line-height: $banner-dimensions - 18px;
+    text-align: center;
+
+    img {
+      max-width: 60px;
+    }
+  }
+  .modal-body {
+    > * {
+      padding: 15px 0;
+    }
+  }
+  .social-bundle {
+    background-color: $brand-gray-lightest;
+    border: 1px solid #E2E2E8;
+    border-right: none;
+    border-left: none;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    .icon {
+      margin-right: 10px;
+      font-size: 26px;
+    }
+  }
+  .account-forms {
+    .form-group {
+      position: relative;
+    }
+    .btn-link {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+    .btn-submit {
+      margin-top: 35px;
+    }
+  }
+  .copy-scroll {
+    position: relative;
+    height: 150px;
+    margin-top: 45px;
+    padding-top: 30px;
+    overflow: scroll;
+    border-top: 1px solid #E2E2E8;
+
+    p {
+      color: $brand-gray-lighter;
+    }
+    .cs-overlay {
+      display: inline-block;
+      height: 150px;
+      width: 100%;
+      pointer-events: none;
+      position: fixed;
+      left: 10px;
+      max-width: calc(100% - 20px);
+      right: 0;
+      bottom: 50px;
+      background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 9%, #FFFFFF 100%);
+    }
+  }
+}
+@include mq(tablet-up) {
+  .fancy-modal {
+    .modal-body {
+      > * {
+        padding: 30px 60px;
+      }
+    }
+    .social-bundle {
+      .btn {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
